@@ -1,19 +1,23 @@
 {
-    "name": "lukedowning/mountain-breeze",
-    "description": "A Wordpress theme implementing Tailwind CSS and Alpine JS, and removing jQuery once and for all.",
+    "name": "mattradford/mountaingoat",
+    "description": " A nimble WordPress starter theme that ain't half baaaaaaad. Includes Tailwind CSS, Alpine JS and Laravel Mix.",
     "type": "library",
-    "license": "MIT",
+    "license": "GPL",
     "authors": [
         {
-            "name": "Luke Downing",
-            "email": "lukeraymonddowning@gmail.com"
+            "name": "Matt Radford",
+            "email": "matt@mattrad.uk"
         }
     ],
     "require": {
-        "illuminate/view": "^5.5",
-        "illuminate/events": "^5.5",
-        "illuminate/filesystem": "^5.5"
-    },
+		"composer/installers": "^1.4",
+		"johnbillion/extended-cpts": "^4.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/"
+		}
+	},
     "scripts": {
         "post-install-cmd": "npm install"
     }

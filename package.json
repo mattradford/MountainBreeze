@@ -1,7 +1,7 @@
 {
-  "name": "mountain-breeze",
+  "name": "mountaingoat",
   "version": "1.0.0",
-  "description": "A Wordpress theme implementing Tailwind CSS and Alpine JS, and removing jQuery once and for all.",
+  "description": "A WordPress theme for the modern-ish web developer, including Tailwind CSS and Alpine JS.",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",
@@ -14,31 +14,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukeraymonddowning/MountainBreeze.git#mountainbreeze"
+    "url": "git+https://github.com/mattradford/mountaingoat.git#mountaingoat"
   },
   "keywords": [
     "wordpress",
     "php",
     "tailwindcss",
     "alpinejs",
-    "jquery",
     "theme"
   ],
-  "author": "Luke Raymond Downing",
-  "license": "MIT",
+  "author": "Matt Radford",
+  "license": "GPL",
   "bugs": {
-    "url": "https://github.com/lukeraymonddowning/MountainBreeze/issues"
+    "url": "https://github.com/mattradford/mountaingoat/issues"
   },
-  "homepage": "https://github.com/lukeraymonddowning/MountainBreeze/tree/mountainbreeze#readme",
+  "homepage": "https://github.com/mattradford/mountaingoat/tree/mountaingoat#readme",
   "dependencies": {
-    "alpinejs": "^2.0.1",
-    "tailwindcss": "^1.2.0"
+    "@tailwindcss/typography": "^0.2.0",
+    "alpinejs": "^2.6.0",
+    "laravel-mix-versionhash": "^1.1.6",
+    "tailwindcss": "^1.7.6"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.0.6",
-    "cross-env": "^7.0.0",
-    "laravel-mix": "^5.0.1",
-    "purgecss": "^2.0.6",
-    "vue-template-compiler": "^2.6.11"
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.5",
+    "mix-tailwindcss": "^1.2.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.3",
+    "purgecss": "^2.3.0",
+    "vue-template-compiler": "^2.6.12"
   }
 }

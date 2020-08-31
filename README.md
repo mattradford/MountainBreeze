@@ -1,13 +1,13 @@
-# MountainBreeze
-A Wordpress theme template for the modern web developer.
+# mountaingoat
+A WordPress theme template for the modern web developer.
 
 # Features
 - [Tailwind CSS](https://tailwindcss.com) baked in
 - [Alpine JS](https://github.com/alpinejs/alpine) baked in
-- [The Laravel Blade templating engine](https://laravel.com/docs/6.x/blade)
-- [Laravel Collections](https://laravel.com/docs/6.x/collections)
 - [Laravel Mix](https://laravel-mix.com)
 - jQuery removed by default
+
+Mount Goat picture by Nina Rath: https://www.pexels.com/photo/brown-goat-beside-green-plants-3382623/
 
 # Getting started
 We've made Mountain Breeze super quick to get up and running, allowing you to start developing your theme in seconds.
@@ -16,23 +16,23 @@ Requirements:
 - Composer
 - NPM
 
-Clone, fork or download the repository to your Wordpress 'wp-content/themes' directory. 
+Clone, fork or download the repository to your Wordpress 'wp-content/themes' directory.
 Then, from the theme directory, run ```$ composer install``` from the terminal or command prompt.
 
 The theme will automatically run ```$ npm install``` for you an even build the needed stylesheets for you.
 
 # Our motivation
 Wordpress powers over 1/3rd of the internet, which is just insane when you think about it. Whilst it
-is a powerful platform with a low barrier to entry, we also think it can be a messy platform, 
-and parts of it are beginning to show their age. 
+is a powerful platform with a low barrier to entry, we also think it can be a messy platform,
+and parts of it are beginning to show their age.
 
-Especially when compared to a framework like Laravel, Wordpress can become a burden to develop in. 
+Especially when compared to a framework like Laravel, Wordpress can become a burden to develop in.
 But it doesn't have to be. In fact, with just a little tweaking, you can have the best of both worlds.
 
 This is our *opinionated* Wordpress theme setup. These opinions come from years of developing with Wordpress
 and Laravel, of using jQuery and Alpine, of using Bootstrap and Tailwind, and from seeing what made our lives as developers easier.
 
-We include libraries that we think truly add value, remove ones we feel don't, 
+We include libraries that we think truly add value, remove ones we feel don't,
 and give you the flexibility to make any adjustments you want.
 
 Our thanks goes to the many creators and contributors behind Laravel, Tailwind CSS, Alpine JS and all of
@@ -51,7 +51,7 @@ When you're ready for production, run ```$ npm run prod``` from the theme direct
 will minify and prepare your files ready for go live.
 
 # Using Blade
-Mountain Breeze ships with Blade support baked in. Blade is a powerful templating engine provided in the 
+Mountain Breeze ships with Blade support baked in. Blade is a powerful templating engine provided in the
 Laravel framework, and developers love it for the power it offers whilst remaining easy and enjoyable
 to use.
 
@@ -62,7 +62,7 @@ You don't even have to include the corresponding template file (eg: page.php) in
 We have already done this for you for the index.php file, which you can find at 'templates/index.blade.php'.
 
 But it gets even better. The Wordpress Loop is one of the most common patterns in Wordpress development.
-To help with this, Mountain Breeze includes a custom blade directive: ```@loop```. This allows you to 
+To help with this, Mountain Breeze includes a custom blade directive: ```@loop```. This allows you to
 quickly implement the Wordpress loop in any template file. Here is an example:
 
 ```
@@ -79,7 +79,7 @@ Pretty awesome, huh?
 For more details on using blade, check out the documentation at https://laravel.com/docs/6.x/blade
 
 # Using Tailwind
-Tailwind is baked right into Mountain Breeze, and you can start using it right away. In fact, 
+Tailwind is baked right into Mountain Breeze, and you can start using it right away. In fact,
 you can check out our example index file in 'templates/index.blade.php' to see it in use.
 
 If you would like to customise Tailwind, you can edit the included tailwind.config.js file.
@@ -111,7 +111,7 @@ it don't really exist anymore. Especially for simple Wordpress sites, jQuery is 
 unnecessary burden that hogs resources and user bandwidth.
 
 We believe libraries like Alpine JS offer a much nicer syntax at a much lower cost, so we opted to remove
-jQuery by default in the theme. 
+jQuery by default in the theme.
 
 If you really can't do without it, you can get it back by pasting the following code in your functions.php file:
 
@@ -120,4 +120,4 @@ public function enablejQuery()
 {
     return true;
 }
-``` 
+```

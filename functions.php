@@ -1,12 +1,37 @@
 <?php
+/**
+ * If this file is accessed directory, then abort.
+ */
+if (!defined('WPINC')) {
+    die;
+}
 
 /**
- * In order to avoid cluttering your functions file, we include our own here at the top.
- * This file is responsible for enqueuing your styles (including Tailwind),
- * scripts (including Alpine), and enabling Blade templating support.
+ * Composer
  */
-require_once __DIR__ . '/mountainbreeze/functions.php';
+require __DIR__ . '/vendor/autoload.php';
 
 /**
- * Build something amazing...
+ * Global helpers
  */
+foreach (glob(get_template_directory() . '/app/Helpers/*.php') as $filename) {
+    include_once $filename;
+}
+
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_style('main', get_stylesheet_directory_uri() . '/dist/css/main.css');
+    wp_enqueue_script('main', get_stylesheet_directory_uri() . '/dist/js/main.js');
+    if (!function_exists('enablejQuery') || !enablejQuery()) {
+        wp_deregister_script('jquery');
+    } else {
+        wp_enqueue_script('legacy', get_stylesheet_directory_uri() . '/dist/js/legacy.js', ['jquery'], '', 'true');
+    }
+});
+
+/**
+ * Boot the theme and all core functionality
+ */
+add_action('init', function () {
+    new \App\Inc\RegisterServiceProviders;
+});
+

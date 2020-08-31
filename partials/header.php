@@ -1,3 +1,15 @@
+<?php
+/**
+ * Template part for global <header>
+ *
+ * @category Theme
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
+ **/
+?>
 <header class="header w-full z-30 top-0 p-4 md:px-0 bg-gray-300 text-gray-800"
     x-data="{ isOpen: false }">
     <div class="container flex">

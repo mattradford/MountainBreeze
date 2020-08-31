@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Inc;
+namespace App\Providers;
+
 use App\Inc\ServiceProvider;
 
 /**
- * Registers service providers
+ * Registers main theme services
  *
  * @category Theme
  * @package  mattradford/mountaingoat
@@ -13,14 +14,16 @@ use App\Inc\ServiceProvider;
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
  */
-class RegisterServiceProviders extends ServiceProvider
+class ThemeServiceProvider extends ServiceProvider
 {
     /**
-     * Register your service providers here.
+     * List the classes that need to be booted on every request
      *
      * @var array
      */
     protected $classes = [
-        '\App\Providers\BootServiceProvider',
+        '\App\Boot\Init',
+        '\App\Boot\BaseWrapper',
+        '\App\Boot\CleanUp',
     ];
 }

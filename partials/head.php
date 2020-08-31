@@ -1,3 +1,15 @@
+<?php
+/**
+ * Template part for <head>
+ *
+ * @category Theme
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
+ **/
+?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

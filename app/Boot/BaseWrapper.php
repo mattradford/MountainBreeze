@@ -1,30 +1,25 @@
 <?php
 
-//@TODO TODO-PSR2 this file declares symbols & has side effects
 namespace App\Boot;
-
-//function td_template_path() {
-//    return BaseWrapper::$main_template;
-//}
 
 /**
  * Theme wrapper
  *
  * @category Theme
- * @package  TenDegrees/10degrees-base
- * @author   10 Degrees <wordpress@10degrees.uk>
- * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html GPL-2.0+
- * @link     https://github.com/10degrees/10degrees-base
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
  * @link     http://roots.io/an-introduction-to-the-roots-theme-wrapper/
  * @link     http://scribu.net/wordpress/theme-wrappers.html
- * @since    2.0.0
+ * @since    1.0.0
  */
 class BaseWrapper
 {
-    // Stores the full path to the main template file
+    // Store the full path to the main template file
     static $main_template;
 
-    // Stores the base name of the template file; e.g. 'page' for 'page.php' etc.
+    // Store the base name of the template file; e.g. 'page' for 'page.php' etc.
     static $base;
 
     /**

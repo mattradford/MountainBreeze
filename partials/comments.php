@@ -1,4 +1,14 @@
 <?php
+/**
+ * Comments
+ *
+ * @category Theme
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
+ **/
 if (post_password_required()) {
     return;
 }

@@ -1,7 +1,7 @@
 {
   "name": "mountaingoat",
   "version": "1.0.0",
-  "description": "A WordPress theme for the modern-ish web developer, including Tailwind CSS and Alpine JS.",
+  "description": "A nimble WordPress starter theme that ain't half baaaaaaad. Includes Tailwind CSS, Alpine JS and Laravel Mix.",
   "main": "index.js",
   "scripts": {
     "dev": "npm run development",

@@ -1,12 +1,13 @@
 <?php
-
 /**
  * Numeric page navigation, adapted from Bones.
  *
- * Use the global $wp_query. Should be used in archives only.
- * For custom queries that require pagination, try the
- * WPQueryBuilder with a corresponding model.
- *
+ * @category Theme
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
  * @return void
  */
 function mg_pagination()

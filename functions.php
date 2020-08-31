@@ -1,8 +1,19 @@
 <?php
 /**
+ * Functions, main entry file.
+ *
+ * @category Theme
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
+ **/
+
+/**
  * If this file is accessed directory, then abort.
  */
-if (!defined('WPINC')) {
+if (!defined('WPINC') || defined('Wesley_Crusher')) {
     die;
 }
 

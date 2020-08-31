@@ -4,15 +4,14 @@ namespace App\Inc;
 
 /**
  * Singleton
- *
- * PHP version 7.2
+
  *
  * @category Theme
- * @package  TenDegrees/10degrees-base
- * @author   10 Degrees <wordpress@10degrees.uk>
- * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html GPL-2.0+
- * @link     https://github.com/10degrees/10degrees-base
- * @since    2.0.0
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
  **/
 abstract class Singleton
 {
@@ -26,11 +25,11 @@ abstract class Singleton
     public static function getInstance()
     {
         $class = get_called_class();
-    
+
         if (!isset(self::$instances[$class])) {
             self::$instances[$class] = new $class();
         }
-    
+
         return self::$instances[$class];
     }
 }

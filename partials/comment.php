@@ -1,3 +1,15 @@
+<?php
+/**
+ * Single comment
+ *
+ * @category Theme
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
+ **/
+?>
 <?php echo get_avatar($comment, $size = '64'); ?>
 <div class="media-body">
       <h4 class="media-body__heading"><?php echo get_comment_author_link(); ?></h4>

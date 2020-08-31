@@ -1,6 +1,6 @@
 {
     "name": "mattradford/mountaingoat",
-    "description": " A nimble WordPress starter theme that ain't half baaaaaaad. Includes Tailwind CSS, Alpine JS and Laravel Mix.",
+    "description": "A nimble WordPress starter theme that ain't half baaaaaaad. Includes Tailwind CSS, Alpine JS and Laravel Mix.",
     "type": "library",
     "license": "GPL",
     "authors": [

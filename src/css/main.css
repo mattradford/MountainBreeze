@@ -1,0 +1,11 @@
+@import "components/_tailwind.css";
+@import "components/_alpine.css";
+@import "components/_header.css";
+@import "components/_footer.css";
+@import "components/_pagination.css";
+@import "components/_article.css";
+
+/* purgecss end ignore */
+/* Add utilities after composable classes
+@link https://tailwindcss.com/docs/extracting-components#extracting-css-components-with-apply */
+@tailwind utilities;

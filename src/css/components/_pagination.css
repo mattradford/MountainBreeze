@@ -1,0 +1,6 @@
+.pagination ul {
+  @apply flex justify-center;
+  li {
+    @apply p-1 m-1;
+  }
+}

@@ -11,7 +11,8 @@
  **/
 
 /**
- * If this file is accessed directory, then abort.
+ * If this file is accessed directly, or if Wesley Crusher is present, then abort.
+ * @link https://jerz.setonhill.edu/resources/humor/crusher.htm
  */
 if (!defined('WPINC') || defined('Wesley_Crusher')) {
     die;

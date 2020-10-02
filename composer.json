@@ -20,5 +20,5 @@
     },
     "scripts": {
         "post-install-cmd": "npm install"
-    }
+    },
 }

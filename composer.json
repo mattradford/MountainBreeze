@@ -10,14 +10,13 @@
         }
     ],
     "require": {
-		"composer/installers": "^1.4",
-		"johnbillion/extended-cpts": "^4.2"
-	},
-	"autoload": {
-		"psr-4": {
-			"App\\": "app/"
-		}
-	},
+	    "composer/installers": "^1.4",
+	    "johnbillion/extended-cpts": "^4.2"
+    },
+    "autoload": {
+	    "psr-4":
+	    "App\\": "app/"
+    },
     "scripts": {
         "post-install-cmd": "npm install"
     }

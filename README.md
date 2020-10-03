@@ -133,7 +133,7 @@ on jQuery. Some of the better ones will check if it's enqueued and if not, enque
 If you need it, you can get enable jQuery by returning `true` on the `enablejQuery()` function
 in `functions.php`, e.g.:
 
-```
+```php
 function enablejQuery()
 {
     return true;
@@ -148,9 +148,14 @@ means it's a lot easier to understand.
 # To do
 
 - `alignwide` and `alignfull` support
-- fix buttons
+- fix buttons conflict with Tailwind Typography
 - PSR-12 conformity
 - Lint JavaScript and CSS
+- 404 page text option
+- fix `post-install-cmd` in `composer.json`
+- add version hashing to JS and CSS compilation
+- language `.pot` compilation
+- port functionality as needed from [10 Degrees Base Theme](https://github.com/10degrees/10degrees-base)
 
 # Anything else?
 

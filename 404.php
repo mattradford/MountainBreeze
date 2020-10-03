@@ -17,12 +17,8 @@
     if ($option_text = get_option('options_404_error_page_text')) :
         esc_html_e($option_text);
     else :
-        echo '<div>';
-        esc_html_e('Sorry, that page does not exist.', '@textdomain');
-        echo '</div>';
+        get_template_part('partials/no', 'content');
     endif;
-
-    get_search_form();
     ?>
 
 </div>

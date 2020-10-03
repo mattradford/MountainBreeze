@@ -9,11 +9,8 @@
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
  **/
-if (!have_posts()) : ?>
-    <div class="alert">
-        <p><?php _e('Sorry, no results were found.', '@textdomain'); ?></p>
-    </div>
-    <?php get_search_form();
+if (!have_posts()) :
+    get_template_part('partials/no', 'content');
 endif;
 
 while (have_posts()) :

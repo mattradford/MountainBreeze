@@ -1,7 +1,6 @@
 const mix = require("laravel-mix");
 const purgecss = require("@fullhuman/postcss-purgecss");
 require("mix-tailwindcss");
-require("lmvh");
 
 mix
   .js("src/js/main.js", "dist/js/")

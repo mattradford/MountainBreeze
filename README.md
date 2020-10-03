@@ -1,123 +1,140 @@
 # mountaingoat
-A WordPress theme template for the modern web developer.
+A nimble WordPress starter theme that ain't half baaaaaaad.
 
 # Features
-- [Tailwind CSS](https://tailwindcss.com) baked in
-- [Alpine JS](https://github.com/alpinejs/alpine) baked in
+- [Tailwind CSS](https://tailwindcss.com)
+- [Alpine JS](https://github.com/alpinejs/alpine)
 - [Laravel Mix](https://laravel-mix.com)
 - jQuery removed by default
 
 Mount Goat picture by Nina Rath: https://www.pexels.com/photo/brown-goat-beside-green-plants-3382623/
 
+# Why?
+
+I want to build themes quickly and in ways that other developers can easily pick up, if need be. For that reason,
+CSS frameworks such as Tailwind mean that there's effectively a stable Design API to work with. Also, Alpine.js
+is just nice to work with, and complements Tailwind as a declarative syntax.
+
+I also wanted to have a theme with everything built out for the WordPress block editor. This is a work-in-progress,
+but it means that end users have a solid foundation on which to create their pages.
+
+## Thanks
+
+Thanks goes to the many creators and contributors behind Laravel, Tailwind CSS, Alpine JS, the many WordPress themes
+I've lifted code from - and all oftheir components for providing such an outstanding experience for web developers.
+And not least [Luke Downing](https://github.com/lukeraymonddowning) from whom I forked [Mountain Breeze](https://github.com/lukeraymonddowning/MountainBreeze).
+
 # Getting started
-We've made Mountain Breeze super quick to get up and running, allowing you to start developing your theme in seconds.
 
 Requirements:
+- Git
 - Composer
 - NPM
 
-Clone, fork or download the repository to your Wordpress 'wp-content/themes' directory.
-Then, from the theme directory, run ```$ composer install``` from the terminal or command prompt.
+1) `git clone git@github.com:mattradford/MountainGoat.git {yourthemename}` into `wp-content/themes`.
+2) `composer install`
+3) `npm install`
 
-The theme will automatically run ```$ npm install``` for you an even build the needed stylesheets for you.
+And then:
 
-# Our motivation
-Wordpress powers over 1/3rd of the internet, which is just insane when you think about it. Whilst it
-is a powerful platform with a low barrier to entry, we also think it can be a messy platform,
-and parts of it are beginning to show their age.
-
-Especially when compared to a framework like Laravel, Wordpress can become a burden to develop in.
-But it doesn't have to be. In fact, with just a little tweaking, you can have the best of both worlds.
-
-This is our *opinionated* Wordpress theme setup. These opinions come from years of developing with Wordpress
-and Laravel, of using jQuery and Alpine, of using Bootstrap and Tailwind, and from seeing what made our lives as developers easier.
-
-We include libraries that we think truly add value, remove ones we feel don't,
-and give you the flexibility to make any adjustments you want.
-
-Our thanks goes to the many creators and contributors behind Laravel, Tailwind CSS, Alpine JS and all of
-their components for providing such an outstanding experience for web developers. Without them, none of this
-would be possible.
-
-Happy coding!
+4) Find and replace `@textdomain` strings with the text domain for your theme.
+5) Replace `screenshot.png` with your theme's screenshot.
 
 # Building assets
-Mountain Breeze builds your style.css and js files using Laravel Mix. This allows you to use the latest
-Javascript features and advanced CSS.
+Mountain Goat builds your CSS and JS files using Laravel Mix. This allows you to use the latest
+JavaScript features and advanced CSS.
 
-To build your assets for development, run ```$ npm run dev``` from the theme directory in the terminal.
+To build your assets for development, run `$ npm run dev` from the theme directory in the terminal.
 
-When you're ready for production, run ```$ npm run prod``` from the theme directory in the terminal. This
-will minify and prepare your files ready for go live.
+To watch your files in `src` and build for development when they're saved, run `$ npm run watch`.
 
-# Using Blade
-Mountain Breeze ships with Blade support baked in. Blade is a powerful templating engine provided in the
-Laravel framework, and developers love it for the power it offers whilst remaining easy and enjoyable
-to use.
+When you're ready for production, run `$ npm run prod`. This will minify and prepare your files ready
+for go live.
 
-All blade files are stored in the theme's 'templates' directory. Mountain Breeze can automatically detect
-which wordpress template file it should use and, if a matching blade file exists, will use that instead.
-You don't even have to include the corresponding template file (eg: page.php) in the root directory.
-
-We have already done this for you for the index.php file, which you can find at 'templates/index.blade.php'.
-
-But it gets even better. The Wordpress Loop is one of the most common patterns in Wordpress development.
-To help with this, Mountain Breeze includes a custom blade directive: ```@loop```. This allows you to
-quickly implement the Wordpress loop in any template file. Here is an example:
-
-```
-<div>
-    @loop
-        <h3>{{ the_title(); }}</h3>
-        <p>{{ the_excerpt(); }}</p>
-    @endloop
-</div>
-```
-
-Pretty awesome, huh?
-
-For more details on using blade, check out the documentation at https://laravel.com/docs/6.x/blade
-
-# Using Tailwind
-Tailwind is baked right into Mountain Breeze, and you can start using it right away. In fact,
-you can check out our example index file in 'templates/index.blade.php' to see it in use.
-
-If you would like to customise Tailwind, you can edit the included tailwind.config.js file.
-Available options can be found at https://tailwindcss.com/docs/configuration
-
-# Using Alpine
-Alpine is baked right into Mountain Breeze, and you can start using it right away. In fact,
-you can check out our example index file in 'templates/index.blade.php' to see it in use.
-
-# Using Collections
-Laravel Collections provide an awesome wrapper around arrays, and provide many useful utilities
-to make developing easier. You can create a Collection by calling the ```collect(array $array)```
-helper function.
-
-For more details on using collections, check out the documentation at https://laravel.com/docs/6.x/collections
-
-# Using Mix
-Laravel Mix is a webpack wrapper that take the complexity out of webpack. Especially for newer developers,
-webpack can be one of the biggest hurdles to development, but the power it offers cannot be taken lightly.
-
-Mix takes all the pain out of webpack, leaving you with the power you need. Our default mix configuration
-should suffice for most projects, but if you want to customise it further, check out the documentation at
+## Using Mix
+Laravel Mix is a Webpack wrapper that take the complexity out of Webpack. The Mix configuration
+should do for most projects, but if you want to customise it further, check out the documentation at
 https://laravel-mix.com
 
-# No jQuery?
-jQuery has been and always will be close to our hearts. For years, it was the only real way to endure
-javascript development on the web. But the web has finally caught up, and the problems that once plagued
-it don't really exist anymore. Especially for simple Wordpress sites, jQuery is nothing more than an
-unnecessary burden that hogs resources and user bandwidth.
+# CSS
 
-We believe libraries like Alpine JS offer a much nicer syntax at a much lower cost, so we opted to remove
-jQuery by default in the theme.
+## Using Tailwind
+Tailwind CSS included in Mountain Goat. If you would like to customise Tailwind, you can edit the included tailwind.config.js file.
+Available options can be found at https://tailwindcss.com/docs/configuration.
 
-If you really can't do without it, you can get it back by pasting the following code in your functions.php file:
+The `.container` is set to be automatically centred.
+
+## Tailwind plugins
+There are two Tailwind plugins included:
+
+- [Tailwind Typography](https://www.npmjs.com/package/@tailwindcss/typography)
+- [TailwindCSS WordPress](https://www.npmjs.com/package/@mattrad/tailwindcss-wordpress)
+
+### Tailwind Typography
+A plugin that provides a set of `prose` classes to add typographic defaults. These have been added tp
+WordPress files such as `partials/content.php`.
+
+It works pretty well with block editor content, but some things need work.
+
+### TailwindCSS WordPress
+My plugin that generates WordPress utility classes - for block editor, accessibility, alignment and image captions.
+
+You can configure block editor colour palette and font sizes like this:
+
+```js
+editorColorPalette: {
+    primary: "blue",
+    secondary: "#ccc",
+},
+editorFontSizes: {
+    small: "0.875rem",
+    medium: "1rem",
+},
+```
+
+I suggest you use the same `prose-` classe sizes as Tailwind Typography, for consistency, namely:
+
+| Class | Body font size  |
+|---|---|
+| prose-sm  | 0.875rem (14px)  |
+| prose  |  1rem (16px) |
+| prose-lg  | 1.125rem (18px)  |
+| prose-xl  | 1.25rem (20px)  |
+| prose-2xl  | 1.5rem (24px)  |
+|---|---|
+
+## Additional CSS
+PostCSS is used to compile CSS files.
+- Imports are allowed
+- Nesting of CSS is enabled
+
+# JS
+
+## Using Alpine
+Alpine.js is included in Mountain Goat, and you can start using it right away. Check out 'partials/header.php'
+to see it in use, to show and hide the menu.
+
+## Additional JavaScript
+
+## No jQuery?
+Yes and no. jQuery is a large library that you may not need. Libraries like Alpine JS offer a much
+nicer syntax at a much lower cost, so I have removed jQuery by default in the theme.
+
+If you really can't do without it, you can get it back by returning `true` on the `enablejQuery()` function
+in the `functions.php` file, e.g.:
 
 ```
-public function enablejQuery()
+function enablejQuery()
 {
     return true;
 }
 ```
+
+This will also enqueue an additional file, `legacy.js`. Write all your jQuery in `src/legacy.js` and it will
+be compiled by Laravel Mix, separately to your modern JavaScript in `main.js`. This is because while I've found
+it possible to include jQuery within a Webpack file, it's a real pain. This separation of modern and legacy JS
+means it's a lot easier to understand.
+
+# Anything else?
+
+If `Wesley_Crusher` is found, the theme will `die`.

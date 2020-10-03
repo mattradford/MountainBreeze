@@ -30,6 +30,16 @@ foreach (glob(get_template_directory() . '/app/Helpers/*.php') as $filename) {
     include_once $filename;
 }
 
+/**
+ * Enable jQuery
+ *
+ * False by default; return true to enable jQuery
+ */
+function enablejQuery()
+{
+    return false;
+}
+
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('main', get_stylesheet_directory_uri() . '/dist/css/main.css');
     wp_enqueue_script('main', get_stylesheet_directory_uri() . '/dist/js/main.js');

@@ -21,6 +21,7 @@ class RegisterServiceProviders extends ServiceProvider
      * @var array
      */
     protected $classes = [
-        '\App\Providers\BootServiceProvider',
+        '\App\Providers\ThemeServiceProvider',
+        '\App\Providers\AdminServiceProvider',
     ];
 }

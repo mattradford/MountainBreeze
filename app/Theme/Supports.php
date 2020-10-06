@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Boot;
+namespace App\Theme;
 
 /**
  * Set up some defaults, add theme supports, textdomain, excerpt niceness, etc.
@@ -12,7 +12,7 @@ namespace App\Boot;
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
  */
-class Init
+class Supports
 {
     /**
      * Constructor
@@ -122,20 +122,6 @@ class Init
          */
         // add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
 
-        /*
-         * Clean up the_excerpt()
-         */
-        add_filter('excerpt_more', function () {
-            return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', '@textdomain') . '</a>';
-        });
-        /*
-         * Excerpt length in words
-         *
-         * @param  integer $length
-         * @return integer
-         */
-        add_filter('excerpt_length', function ($length) {
-            return 10;
-        }, 999);
+
     }
 }

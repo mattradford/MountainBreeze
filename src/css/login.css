@@ -1,0 +1,53 @@
+/*
+ * Styles for /wp-login.php
+ */
+
+.login {
+    background: white;
+    /* Set the size of the login logo */
+    h1 a {
+        /* background-image: url("../img/logo-login.svg"); */
+        background-size: 250px;
+        width: 320px;
+        height: 150px;
+    }
+
+    /* Hide the "Log in" link on the last password page, as it's pointless*/
+    input#wp-submit {
+        @apply bg-blue-500;
+        @apply border-blue-500;
+        &:hover,
+        &:focus {
+            @apply bg-blue-800;
+            @apply border-blue-800;
+        }
+    }
+    .message {
+        @apply border-blue-500;
+        box-shadow: none;
+    }
+    form {
+        box-shadow: none;
+        border: 0;
+    }
+    .button-primary {
+        text-shadow: none;
+    }
+}
+
+/* Center align the Lost Password link */
+#nav {
+    text-align: center;
+}
+
+/* Hide the "Back to (website)" link */
+#backtoblog {
+    display: none;
+}
+
+/* Match colours to modal shown when the login cookie expires */
+.wp-admin {
+    #wp-auth-check-wrap #wp-auth-check {
+        background-color: white;
+    }
+}

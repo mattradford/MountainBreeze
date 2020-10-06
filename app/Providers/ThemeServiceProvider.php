@@ -22,8 +22,9 @@ class ThemeServiceProvider extends ServiceProvider
      * @var array
      */
     protected $classes = [
-        '\App\Boot\Init',
-        '\App\Boot\BaseWrapper',
-        '\App\Boot\CleanUp',
+        '\App\Theme\Supports',
+        '\App\Theme\BaseWrapper',
+        '\App\Theme\CleanUp',
+        '\App\Theme\Enqueue',
     ];
 }

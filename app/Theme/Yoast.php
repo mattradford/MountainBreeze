@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Boot;
+namespace App\Theme;
 
 /**
  * Yoast integration
@@ -46,10 +46,6 @@ class Yoast
             'linkedin' => array(
                 'key' => 'linkedin_url',
                 'icon' => td_get_svg('social-icons/linkedin.svg'),
-            ),
-            'myspace' => array(
-                'key' => 'myspace_url',
-                'icon' => '',
             ),
             'pinterest' => array(
                 'key' => 'pinterest_url',

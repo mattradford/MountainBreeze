@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Boot;
+namespace App\Theme;
 
 /**
  * Theme wrapper

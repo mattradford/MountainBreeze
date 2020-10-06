@@ -6,6 +6,7 @@ module.exports = {
     future: {
       // https://tailwindcss.com/docs/upcoming-changes
       removeDeprecatedGapUtilities: true,
+      purgeLayersByDefault: true,
     },
     editorColorPalette: {
       primary: "blue",

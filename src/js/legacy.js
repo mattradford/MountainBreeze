@@ -1,6 +1,6 @@
 (function($) {
   "use strict";
   $(document).ready(function() {
-    console.log("jQuery is loaded, you animal.");
+    console.log("You've enabled jQuery, you animal ;)");
   });
 })(jQuery);

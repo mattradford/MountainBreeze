@@ -8,7 +8,27 @@ A nimble WordPress starter theme that ain't half baaaaaaad.
 - [Alpine JS](https://github.com/alpinejs/alpine)
 - [Laravel Mix](https://laravel-mix.com)
 - jQuery removed by default
+
+## WordPress customisations
+
+### Front end
+
 - Base template wrapper, adapted from the one used by [Sage](https://roots.io/docs/sage/8.x/wrapper/).
+- A cleaner `<head>`
+
+### Back end / Dashboard
+
+- Set allowed block editor blocks
+- Resuable blocks menu available
+- Remove useless dashboard widgets
+- Remove *Theme editor* menu option
+- Yoast SEO support
+    - Remove MySpace social network option
+- Advanced Custom Fields support
+    - Hide ACF menu except from specified users
+    - Define ACF licence key in `wp-config.php`
+
+
 
 # Why?
 
@@ -142,7 +162,7 @@ function enablejQuery()
 
 This will also enqueue an additional file, `legacy.js`. Write all your jQuery in `src/js/legacy.js` and it will
 be compiled by Laravel Mix, separately to your modern JavaScript in `src/js/main.js`. This is because while I've found
-it possible to include jQuery within a Webpack file, it's a real pain. This separation of modern and legacy JS
+it possible to include jQuery within a Webpack file, it's a real pain to do so. This separation of modern and legacy JS
 means it's a lot easier to understand.
 
 # To do

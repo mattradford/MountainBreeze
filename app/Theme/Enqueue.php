@@ -43,7 +43,7 @@ class Enqueue
     {
         wp_enqueue_style(
             'mg-main',
-            get_template_directory_uri() . mgAssetPath('css/main.css'),
+            get_template_directory_uri() . mgAssetPath('/css/main.css'),
             '',
             false,
             'screen'
@@ -57,11 +57,10 @@ class Enqueue
      */
     public function scripts()
     {
-        wp_register_script('mg-main', get_stylesheet_directory_uri() . mgAssetPath('js/main.js'), '', '', true);
+        wp_enqueue_script('mg-main', get_stylesheet_directory_uri() . mgAssetPath('/js/main.js'), '', '', true);
         if (is_single() && comments_open() && get_option('thread_comments')) {
             wp_enqueue_script('comment-reply');
         }
-        wp_enqueue_script('mg-main');
     }
 
     /**
@@ -72,7 +71,7 @@ class Enqueue
     public function jquery()
     {
         if (enablejQuery()) {
-            wp_enqueue_script('legacy', get_stylesheet_directory_uri() . mgAssetPath('js/legacy.js'), ['jquery'], '', 'true');
+            wp_enqueue_script('mg-legacy', get_stylesheet_directory_uri() . mgAssetPath('/js/legacy.js'), ['jquery'], '', 'true');
         } else {
             wp_deregister_script('jquery');
         }
@@ -85,7 +84,7 @@ class Enqueue
      */
     public function adminStyle()
     {
-        wp_enqueue_style('mg-admin', get_stylesheet_directory_uri() . mgAssetPath('css/admin.css'), '', '', 'screen');
+        wp_enqueue_style('mg-admin', get_stylesheet_directory_uri() . mgAssetPath('/css/admin.css'), '', '', 'screen');
     }
 
     /**
@@ -95,7 +94,7 @@ class Enqueue
      */
     public function adminScript()
     {
-        wp_enqueue_script('mg-admin', get_stylesheet_directory_uri() . mgAssetPath('js/admin.js'), '', '', true);
+        wp_enqueue_script('mg-admin', get_stylesheet_directory_uri() . mgAssetPath('/js/admin.js'), '', '', true);
     }
 
     /**
@@ -115,7 +114,7 @@ class Enqueue
      */
     public function blockEditorStyle()
     {
-        wp_enqueue_style('mg-editor-block-style', get_stylesheet_directory_uri() . mgAssetPath('css/editor-block.css'), '', '', 'screen');
+        wp_enqueue_style('mg-editor-block-style', get_stylesheet_directory_uri() . mgAssetPath('/css/editor-block.css'), '', '', 'screen');
     }
 
     /**
@@ -125,7 +124,7 @@ class Enqueue
      */
     public function blockEditorScript()
     {
-        wp_enqueue_script('mg-editor-block-script', get_stylesheet_directory_uri() . mgAssetPath('js/editor-block.js'), ['wp-blocks', 'wp-dom','wp-edit-post'], '', true);
+        wp_enqueue_script('mg-editor-block-script', get_stylesheet_directory_uri() . mgAssetPath('/js/editor-block.js'), ['wp-blocks', 'wp-dom','wp-edit-post'], '', true);
     }
 
     /**

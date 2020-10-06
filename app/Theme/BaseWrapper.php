@@ -66,4 +66,4 @@ class BaseWrapper
     }
 }
 
-add_filter('template_include', array( 'App\Boot\BaseWrapper', 'wrap' ), 99);
+add_filter('template_include', array( 'App\Theme\BaseWrapper', 'wrap' ), 99);

@@ -35,7 +35,7 @@ class Login
      */
     public function loginCss()
     {
-        echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . mgAssetPath('/dist/css/login.css') . '" />';
+        echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . mgAssetPath('/css/login.css') . '" />';
     }
 
     /**

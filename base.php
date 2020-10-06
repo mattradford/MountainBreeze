@@ -31,7 +31,7 @@
         <main id="main">
             <?php
                 get_template_part('partials/breadcrumbs');
-                require \App\Boot\BaseWrapper::$main_template;
+                require \App\Theme\BaseWrapper::$main_template;
             ?>
         </main>
 

@@ -22,6 +22,7 @@ class Enqueue
         add_action('wp_enqueue_scripts', [$this, 'style'], 100);
         add_action('wp_enqueue_scripts', [$this, 'scripts'], 100);
         add_action('wp_enqueue_scripts', [$this, 'jquery'], 100);
+        add_action('login_enqueue_scripts', [$this, 'login'], 100);
         // add_action('admin_init', [$this, 'adminStyle'], 100);
         // add_action('admin_init', [$this, 'adminScript'], 100);
         // add_action('wp_enqueue_scripts', [$this, 'removeBlockCSS'], 100);
@@ -95,6 +96,15 @@ class Enqueue
     public function adminScript()
     {
         wp_enqueue_script('mg-admin', get_stylesheet_directory_uri() . mgAssetPath('/js/admin.js'), '', '', true);
+    }
+    /**
+     * JavaScript for wp-admin
+     *
+     * @return void
+     */
+    public function login()
+    {
+        wp_enqueue_style('mg-login', get_stylesheet_directory_uri() . mgAssetPath('/css/login.css'), ['login']);
     }
 
     /**

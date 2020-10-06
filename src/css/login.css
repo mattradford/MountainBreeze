@@ -4,13 +4,6 @@
 
 .login {
     background: white;
-    /* Set the size of the login logo */
-    h1 a {
-        /* background-image: url("../img/logo-login.svg"); */
-        background-size: 250px;
-        width: 320px;
-        height: 150px;
-    }
 
     /* Hide the "Log in" link on the last password page, as it's pointless*/
     input#wp-submit {

@@ -19,23 +19,10 @@ class Login
      */
     public function __construct()
     {
-        add_action('login_head', [$this, 'loginCss']);
-        add_filter('login_headerurl', [$this, 'loginLogoUrl']);
-        add_filter('login_headertext', [$this, 'loginLogoUrlTitle']);
-        add_action('login_footer', [$this, 'loginCheckedRememberMe']);
-    }
-
-    /**
-     * Login screen
-     *
-     * Add CSS in the file referenced below, then create the appropriate
-     * logo in assets/img/logo-login.png
-     *
-     * @return void
-     */
-    public function loginCss()
-    {
-        echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() . mgAssetPath('/css/login.css') . '" />';
+        add_filter('login_headerurl', [$this, 'logoUrl']);
+        add_filter('login_headertext', [$this, 'logoUrlTitle']);
+        add_action('login_head', [$this, 'siteLogo']);
+        add_action('login_footer', [$this, 'rememberMeChecked']);
     }
 
     /**
@@ -43,7 +30,7 @@ class Login
      *
      * @return string $url Home URL
      */
-    public function loginLogoUrl()
+    public function logoUrl()
     {
         return home_url();
     }
@@ -53,9 +40,32 @@ class Login
      *
      * @return string $name Blog name
      */
-    public function loginLogoUrlTitle()
+    public function logoUrlTitle()
     {
         return get_bloginfo('name');
+    }
+
+    /**
+     * Use site logo, if set
+     *
+     * @return void
+     */
+    public function siteLogo()
+    {
+        if (has_custom_logo()) :
+            $customLogoId = get_theme_mod('custom_logo');
+            $customLogoUrl = wp_get_attachment_image_url($customLogoId);
+            ?>
+            <style>
+            .login h1 a {
+                background-image: url(<?php echo $customLogoUrl; ?>);
+                padding-bottom: 30px;
+                width: 250px;
+                background-size: cover;
+            }
+            </style>
+            <?php
+        endif;
     }
 
     /**
@@ -63,7 +73,7 @@ class Login
      *
      * @return void
      */
-    public function loginCheckedRememberMe()
+    public function rememberMeChecked()
     {
         echo "<script>document.getElementById('rememberme').checked = true;</script>";
     }

@@ -5,9 +5,6 @@ require("mix-tailwindcss");
 mix
   .setPublicPath("dist")
   .js("src/js/main.js", "js")
-  // Unless you put the full destination filepath, .babel breaks compliation
-  // ¯\_(ツ)_/¯
-  .babel("src/js/legacy.js", "dist/js/legacy.js")
   .postCss("src/css/main.css", "css", [
     require("tailwindcss"),
     require("postcss-nested"),
@@ -35,3 +32,7 @@ mix
       : []),
   ])
   .tailwind();
+
+// Unless you put the full destination filepath, .babel breaks compliation
+// ¯\_(ツ)_/¯
+mix.babel("src/js/legacy.js", "dist/js/legacy.js");

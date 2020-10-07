@@ -33,7 +33,7 @@ A nimble WordPress starter theme that ain't half baaaaaaad.
 - Advanced Custom Fields support
     - Hide ACF menu except from specified users
     - Define ACF licence key in `wp-config.php`
-    - PHP Field Group importer (props @AliceKLWilliams)
+    - PHP Field Group importer (props [@AliceKLWilliams](https://github.com/AliceKLWilliams))
 
 # Why?
 

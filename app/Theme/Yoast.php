@@ -3,7 +3,7 @@
 namespace App\Theme;
 
 /**
- * Yoast integration
+ * Yoast social integration
  *
  * @category Theme
  * @package  mattradford/mountaingoat
@@ -19,7 +19,7 @@ class Yoast
      */
     public function __construct()
     {
-        add_filter('admin_head', [$this, 'hideDeadSocialNetworksInYoastSocial']);
+
     }
 
     /**
@@ -64,22 +64,5 @@ class Yoast
         return $options;
     }
 
-    /**
-     * CSS away social networks that flopped
-     *
-     * @return string CSS
-     */
-    public function hideDeadSocialNetworksInYoastSocial()
-    {
-        ob_start(); ?>
-        <style>
-        #myspace_url,
-        label[for="myspace_url"],
-        #myspace_url + br {
-            display: none!important;//RIP Tom
-        }
-        </style>
-        <?php
-        echo ob_get_clean();
-    }
+
 }

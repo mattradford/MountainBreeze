@@ -8,11 +8,11 @@ namespace App\Admin;
  * Remove unecessary functionality
  *
  * @category Theme
- * @package  TenDegrees/10degrees-base
- * @author   10 Degrees <wordpress@10degrees.uk>
- * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html GPL-2.0+
- * @link     https://github.com/10degrees/10degrees-base
- * @since    2.0.0
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
  */
 class CleanUp
 {
@@ -21,9 +21,6 @@ class CleanUp
      */
     public function __construct()
     {
-        add_action('add_meta_boxes', [$this, 'removeYoastMetaBoxForNon'], 99);
-        add_action('add_meta_boxes', [$this, 'removeYoastMetaBoxForPostType'], 99);
-        add_filter('wpseo_metabox_prio', [$this, 'moveYoastToBottomOfEditPage']);
         add_filter('tiny_mce_before_init', [$this, 'forceAdvancedWysiwyg']);
         add_action('admin_notices', [$this, 'restrictUpdateNotification'], 1);
         add_filter('admin_bar_menu', [$this, 'replaceHowdy'], 25);
@@ -43,39 +40,6 @@ class CleanUp
         if (!defined('DISALLOW_FILE_EDIT')) {
             define('DISALLOW_FILE_EDIT', true);
         }
-    }
-
-    /**
-     * Remove Yoast SEO meta from users below Editor
-     *
-     * @return void
-     */
-    public function removeYoastMetaBoxForNon()
-    {
-        if (!current_user_can('edit_posts')) {
-            remove_meta_box('wpseo_meta', 'page', 'normal');
-            remove_meta_box('wpseo_meta', 'post', 'normal');
-        }
-    }
-
-    /**
-     * Remove Yoast SEO meta for specified post types
-     *
-     * @return void
-     */
-    public function removeYoastMetaBoxForPostType()
-    {
-        remove_meta_box('wpseo_meta', 'testimonial', 'normal');
-    }
-
-    /**
-     * Yoast SEO to bottom of edit screen
-     *
-     * @return string $position
-     */
-    public function moveYoastToBottomOfEditPage()
-    {
-        return 'low';
     }
 
     /**

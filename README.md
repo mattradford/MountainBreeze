@@ -2,6 +2,8 @@
 
 A nimble WordPress starter theme that ain't half baaaaaaad.
 
+**Demo available at https://mountaingoat.netlify.app/**
+
 ![Mountain Goat image](screenshot.png?raw=true "Mountain Goat")
 
 # Features

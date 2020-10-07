@@ -2,6 +2,8 @@
 
 A nimble WordPress starter theme that ain't half baaaaaaad.
 
+![Mountain Goat image](screenshot.png?raw=true "Mountain Goat")
+
 # Features
 
 - [Tailwind CSS](https://tailwindcss.com)
@@ -22,13 +24,16 @@ A nimble WordPress starter theme that ain't half baaaaaaad.
 - Resuable blocks menu available
 - Remove useless dashboard widgets
 - Remove *Theme editor* menu option for security
+- Bit of menu reordering
 - Login screen customisations
     - Uses site logo as login logo, if set
 - Yoast SEO support
+    - Sets some options
     - Remove MySpace social network option
 - Advanced Custom Fields support
     - Hide ACF menu except from specified users
     - Define ACF licence key in `wp-config.php`
+    - PHP Field Group importer (props @AliceKLWilliams)
 
 # Why?
 

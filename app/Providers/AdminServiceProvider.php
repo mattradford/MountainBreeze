@@ -28,9 +28,9 @@ class AdminServiceProvider extends ServiceProvider
         '\App\Admin\MenuOrder',
         '\App\Admin\ReusableBlockMenu',
         '\App\Admin\SetAllowedBlocks',
-        // '\App\Admin\Acf',
+        '\App\Admin\AcfOptions',
+        '\App\Admin\AcfImporter'
         // '\App\Admin\EditorColourPalette',
-        // '\App\Admin\FontSizes',
-        // '\App\Admin\ACFImporterPage'
+        // '\App\Admin\EditorFontSizes',
     ];
 }

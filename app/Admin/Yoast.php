@@ -21,10 +21,12 @@ class Yoast
      */
     public function __construct()
     {
-        add_action('add_meta_boxes', [$this, 'removeYoastMetaBoxForNon'], 99);
-        add_action('add_meta_boxes', [$this, 'removeYoastMetaBoxForPostType'], 99);
-        add_filter('wpseo_metabox_prio', [$this, 'moveYoastToBottomOfEditPage']);
-        add_filter('admin_head', [$this, 'hideDeadSocialNetworksInYoastSocial']);
+        if (\class_exists('WPSEO_Options')) {
+            add_action('add_meta_boxes', [$this, 'removeYoastMetaBoxForNon'], 99);
+            add_action('add_meta_boxes', [$this, 'removeYoastMetaBoxForPostType'], 99);
+            add_filter('wpseo_metabox_prio', [$this, 'moveYoastToBottomOfEditPage']);
+            add_filter('admin_head', [$this, 'hideDeadSocialNetworksInYoastSocial']);
+        }
     }
 
     /**

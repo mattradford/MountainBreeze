@@ -167,8 +167,10 @@ means it's a lot easier to understand.
 
 # To do
 
-- `alignwide` and `alignfull` support
+- `alignwide` and `alignfull` support, see https://github.com/kellymears/tailwind-gutenberg-components/blob/master/src/block-image.js
+- custom Tailwind `.container`, see https://bourhaouta.com/blog/tailwind-container-the-right-way/
 - fix buttons conflict with Tailwind Typography
+- Editor colour palette and fonts sizes
 - PSR-12 conformity
 - Lint JavaScript and CSS
 - 404 page text option

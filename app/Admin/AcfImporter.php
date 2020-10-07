@@ -3,18 +3,20 @@
 namespace App\Admin;
 
 /**
- * ACFImporterPage
+ * ACFImporter
  *
- * Add a page to import ACF fields based off their group key
+ * Add a page to import ACF fields, based on their group key
+ * This allows you to go from PHP-defined field groups back to groups
+ * that can be edited in the ACF UI.
  *
  * @category Theme
- * @package  TenDegrees/10degrees-base
- * @author   10 Degrees <wordpress@10degrees.uk>
- * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html GPL-2.0+
- * @link     https://github.com/10degrees/10degrees-base
- * @since    2.0.0
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
  */
-class ACFImporterPage
+class AcfImporter
 {
     /**
      * Page Name in URL
@@ -35,7 +37,9 @@ class ACFImporterPage
      */
     public function __construct()
     {
-        add_action('admin_menu', [$this, 'addPage']);
+        if (\class_exists('acf')) {
+            add_action('admin_menu', [$this, 'addPage']);
+        }
     }
 
     /**
@@ -48,8 +52,8 @@ class ACFImporterPage
         if (function_exists('acf_add_local_field_group')) {
             add_submenu_page(
                 $this->parentPage,
-                "ACF Field Group Importer",
-                "ACF Field Group Importer",
+                "Field Group Importer",
+                "Field Group Importer",
                 'manage_options',
                 $this->pageName,
                 array($this, 'create_admin_page')
@@ -70,7 +74,7 @@ class ACFImporterPage
         $group = acf_get_local_field_group($key);
 
         $fields = acf_get_fields($group['key']); // Get the groups fields - recursively
-        
+
         $group['fields'] = $fields;
 
         // Setting the ID tells the importer that the group already exists
@@ -78,7 +82,7 @@ class ACFImporterPage
         if ($post) {
             $group['ID'] = $post->ID;
         }
-    
+
         $fieldGroup = acf_import_field_group($group);
 
         return $fieldGroup;
@@ -103,7 +107,7 @@ class ACFImporterPage
             $notice = 'ACF field group "' . $fieldGroup['title'] . '" imported.';
         }
 
-        ?> 
+        ?>
         <div class="wrap">
             <h1>ACF Field Group Importer</h1>
             <div id="col-left">

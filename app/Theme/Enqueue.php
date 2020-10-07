@@ -78,6 +78,16 @@ class Enqueue
         }
     }
 
+     /**
+     * CSS for wp-login
+     *
+     * @return void
+     */
+    public function login()
+    {
+        wp_enqueue_style('mg-login', get_stylesheet_directory_uri() . mgAssetPath('/css/login.css'), ['login']);
+    }
+
     /**
      * CSS for wp-admin
      *
@@ -96,15 +106,6 @@ class Enqueue
     public function adminScript()
     {
         wp_enqueue_script('mg-admin', get_stylesheet_directory_uri() . mgAssetPath('/js/admin.js'), '', '', true);
-    }
-    /**
-     * JavaScript for wp-admin
-     *
-     * @return void
-     */
-    public function login()
-    {
-        wp_enqueue_style('mg-login', get_stylesheet_directory_uri() . mgAssetPath('/css/login.css'), ['login']);
     }
 
     /**

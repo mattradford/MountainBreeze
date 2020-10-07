@@ -3,18 +3,19 @@
 namespace App\Admin;
 
 /**
- * ACF
+ * ACF Options
  *
- * Add custom ACF functions
+ * Hides ACF menu from unspecified users
+ * Allows ACF licence to be defined
  *
  * @category Theme
- * @package  TenDegrees/10degrees-base
- * @author   10 Degrees <wordpress@10degrees.uk>
- * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html GPL-2.0+
- * @link     https://github.com/10degrees/10degrees-base
- * @since    2.0.0
+ * @package  mattradford/mountaingoat
+ * @author   Matt Radford <matt@mattrad.uk>
+ * @license  http://www.wtfpl.net/about/
+ * @link     https://github.com/mattradford/mountaingoat
+ * @since    1.0.0
  */
-class Acf
+class AcfOptions
 {
     /**
      * Define the email domains that are allowed access to
@@ -24,7 +25,7 @@ class Acf
      * email will be allowed to view the ACF dashboard menu
      */
     private $allowedDomains = [
-        'mattrad.uk'
+        'mattrad.co.uk',
     ];
 
     /**
@@ -32,8 +33,10 @@ class Acf
      */
     public function __construct()
     {
-        add_action('admin_init', [$this, 'hideAcfFromMenu']);
-        add_action('after_switch_theme', [$this, 'setLicenseKey']);
+        if (\class_exists('acf')) {
+            add_action('admin_init', [$this, 'hideAcfFromMenu']);
+            add_action('after_switch_theme', [$this, 'setLicenseKey']);
+        }
     }
 
     /**

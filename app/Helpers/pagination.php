@@ -18,7 +18,7 @@ function mg_pagination()
         return;
     }
 
-    echo '<nav class="pagination container p-4 md:px-0">';
+    echo '<nav class="pagination container content">';
 
     echo paginate_links(
         array(

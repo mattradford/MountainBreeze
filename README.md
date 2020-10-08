@@ -176,7 +176,11 @@ means it's a lot easier to understand.
 
 - `alignwide` and `alignfull` support, see https://github.com/kellymears/tailwind-gutenberg-components/blob/master/src/block-image.js
 - custom Tailwind `.container`, see https://bourhaouta.com/blog/tailwind-container-the-right-way/
-- fix buttons conflict with Tailwind Typography
+- fix
+    - buttons conflict with Tailwind Typography
+    - floated images
+    - featured images
+    - comments (maybe)
 - Editor colour palette and fonts sizes
 - PSR-12 conformity
 - Lint JavaScript and CSS

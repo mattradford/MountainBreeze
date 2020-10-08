@@ -1,4 +1,5 @@
 module.exports = {
+  // important: "html",
   theme: {
     container: {
       center: true,
@@ -7,6 +8,19 @@ module.exports = {
       // https://tailwindcss.com/docs/upcoming-changes
       removeDeprecatedGapUtilities: true,
       purgeLayersByDefault: true,
+    },
+    typography: {
+      default: {
+        css: {
+          color: "#333",
+          a: {
+            color: "#3182ce",
+            "&:hover": {
+              color: "#2c5282",
+            },
+          },
+        },
+      },
     },
     editorColorPalette: {
       primary: "blue",
@@ -20,6 +34,23 @@ module.exports = {
   },
   variants: {},
   plugins: [
+    ({ addComponents, theme }) => {
+      addComponents({
+        ".content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce)": {
+          "@apply p-4 mx-auto": {},
+          maxWidth: theme("screens.sm"),
+
+          // Breakpoints
+          "@screen sm": {
+            maxWidth: theme("screens.sm"),
+          },
+          "@screen md": {
+            "@apply px-0": {},
+            maxWidth: theme("screens.md"),
+          },
+        },
+      });
+    },
     require("@tailwindcss/typography"),
     require("@mattrad/tailwindcss-wordpress"),
   ],

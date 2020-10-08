@@ -10,11 +10,11 @@
  * @since    1.0.0
  **/
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('container p-4 md:px-0 prose'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('container content prose'); ?>>
     <header>
         <h1><?php the_title(); ?></h1>
     </header>
-    <section>
+    <section class="prose content clearfix">
         <?php the_content(); ?>
     </section>
 </article>

@@ -1,3 +1,6 @@
-article header h1 {
-  @apply break-words;
+article {
+  header h1 {
+    @apply break-words;
+    @apply mb-0 !important;
+  }
 }

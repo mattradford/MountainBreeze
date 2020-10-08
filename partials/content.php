@@ -10,7 +10,7 @@
  * @since    1.0.0
  **/
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class('container p-4 md:px-0 prose'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('container content prose'); ?>>
     <header>
         <a href="<?php the_permalink(); ?>"><h1><?php the_title(); ?></h1></a>
         <div class="meta">

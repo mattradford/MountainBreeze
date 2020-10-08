@@ -42,6 +42,12 @@ module.exports = {
             maxWidth: theme("screens.sm"),
           },
         },
+        ".content > .wp-block-button": {
+          "@apply mx-auto": {},
+          "@screen sm": {
+            maxWidth: theme("screens.sm"),
+          },
+        },
       });
     },
     require("@tailwindcss/typography"),

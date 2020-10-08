@@ -1,0 +1,6 @@
+/* Fix conflicts with .prose */
+.wp-block-gallery {
+    li::before {
+        @apply hidden;
+    }
+}

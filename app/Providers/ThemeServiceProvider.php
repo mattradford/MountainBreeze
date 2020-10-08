@@ -26,6 +26,7 @@ class ThemeServiceProvider extends ServiceProvider
         '\App\Theme\BaseWrapper',
         '\App\Theme\CleanUp',
         '\App\Theme\Enqueue',
+        '\App\Theme\Search',
         '\App\Theme\Yoast',
     ];
 }

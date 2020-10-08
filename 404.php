@@ -10,7 +10,7 @@
  * @since    1.0.0
  **/
 ?>
-<div class="wrapper">
+<div class="content">
 
     <?php
     get_template_part('partials/page', 'header');

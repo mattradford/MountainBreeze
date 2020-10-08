@@ -12,7 +12,6 @@
  * @since    1.0.0
  **/
 ?>
-<div class="alert">
-    <p><?php _e('Sorry, nothing was found. Try a search?', '@textdomain'); ?></p>
-</div>
+<p><?php _e('Sorry, nothing was found. Try a search?', '@textdomain'); ?></p>
 <?php get_search_form();
+

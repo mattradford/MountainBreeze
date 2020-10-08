@@ -5,6 +5,7 @@
 @import "components/_footer.css";
 @import "components/_pagination.css";
 @import "components/_article.css";
+@import "components/_prose.css";
 
 /* purgecss end ignore */
 /* Add utilities after composable classes

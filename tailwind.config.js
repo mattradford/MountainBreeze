@@ -13,12 +13,12 @@ module.exports = {
       default: {
         css: {
           color: "#333",
-          a: {
-            color: "#3182ce",
-            "&:hover": {
-              color: "#2c5282",
-            },
-          },
+          // a: {
+          //   color: "#3182ce",
+          //   "&:hover": {
+          //     color: "#2c5282",
+          //   },
+          // },
         },
       },
     },
@@ -37,16 +37,9 @@ module.exports = {
     ({ addComponents, theme }) => {
       addComponents({
         ".content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce)": {
-          "@apply p-4 mx-auto": {},
-          maxWidth: theme("screens.sm"),
-
-          // Breakpoints
+          "@apply mx-auto": {},
           "@screen sm": {
             maxWidth: theme("screens.sm"),
-          },
-          "@screen md": {
-            "@apply px-0": {},
-            maxWidth: theme("screens.md"),
           },
         },
       });

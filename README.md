@@ -174,8 +174,7 @@ means it's a lot easier to understand.
 
 # To do
 
-- `alignwide` and `alignfull` support, see https://github.com/kellymears/tailwind-gutenberg-components/blob/master/src/block-image.js
-- custom Tailwind `.container`, see https://bourhaouta.com/blog/tailwind-container-the-right-way/
+- `alignwide` support
 - fix
     - buttons conflict with Tailwind Typography
     - floated images
@@ -188,7 +187,6 @@ means it's a lot easier to understand.
 - fix `post-install-cmd` in `composer.json`
 - add version hashing to JS and CSS compilation
 - language `.pot` compilation
-- port functionality as needed from [10 Degrees Base Theme](https://github.com/10degrees/10degrees-base)
 
 # Anything else?
 

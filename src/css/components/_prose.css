@@ -1,6 +1,26 @@
+/* Set li marker to the text colour */
+.prose ul > li::before {
+    background-color: currentColor;
+}
 /* Fix conflicts with .prose */
 .wp-block-gallery {
     li::before {
         @apply hidden;
+    }
+}
+/* Button conflicts */
+.wp-block-button {
+    &:not(.is-style-outline) {
+        a.wp-block-button__link {
+            @apply text-white;
+        }
+    }
+    &.is-style-squared {
+        a.wp-block-button__link {
+            @apply rounded-none
+        }
+    }
+    a.wp-block-button__link {
+        @apply no-underline;
     }
 }

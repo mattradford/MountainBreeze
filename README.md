@@ -176,7 +176,6 @@ means it's a lot easier to understand.
 
 - `alignwide` support
 - fix
-    - buttons conflict with Tailwind Typography
     - floated images
     - featured images
     - comments (maybe)

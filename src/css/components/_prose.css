@@ -1,11 +1,24 @@
 /* Set li marker to the text colour */
-.prose ul > li::before {
-    background-color: currentColor;
+.prose {
+    ul > li::before {
+        background-color: currentColor;
+    }
+    video {
+        @apply mt-0 mb-0;
+    }
 }
 /* Fix conflicts with .prose */
 .wp-block-gallery {
     li::before {
         @apply hidden;
+    }
+}
+.wp-block-latest-posts, .wp-block-latest-comments, .wp-block-rss, .wp-block-archives-list {
+    li {
+        @apply pl-0 !important;
+        &::before {
+            @apply hidden;
+        }
     }
 }
 /* Button conflicts */
@@ -22,5 +35,59 @@
     }
     a.wp-block-button__link {
         @apply no-underline;
+    }
+}
+.blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+    width: calc(100% - 28px);
+}
+.blocks-gallery-item {
+    img {
+        @apply m-0;
+    }
+}
+
+.wp-block-categories-dropdown, .wp-block-archives-dropdown {
+    select {
+        @apply border border-gray-700 rounded py-2 px-3 leading-tight;
+    }
+}
+
+.wp-block-search__input {
+    @apply appearance-none border border-gray-700 rounded py-2 px-3 leading-tight;
+    @screen md {
+        @apply w-1/2;
+    }
+    &:focus {
+        @apply outline-none shadow-outline;
+    }
+}
+.wp-block-search__button {
+    @apply mt-2 bg-blue-500 text-white py-2 px-4 rounded;
+    @screen sm {
+        @apply mt-0;
+    }
+    &:hover {
+        @apply bg-blue-700;
+    }
+    &:focus {
+        @apply outline-none shadow-outline;
+    }
+}
+
+.post-password-form {
+    input[type="password"] {
+        @apply border border-gray-700 rounded py-2 px-3 leading-tight;
+    }
+    input[type="submit"] {
+        @apply mt-2 bg-blue-500 text-white py-2 px-4 rounded;
+        @screen sm {
+            @apply mt-0;
+        }
+        &:hover {
+            @apply bg-blue-700;
+        }
+        &:focus {
+            @apply outline-none shadow-outline;
+        }
     }
 }

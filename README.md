@@ -186,6 +186,7 @@ means it's a lot easier to understand.
 - fix `post-install-cmd` in `composer.json`
 - add version hashing to JS and CSS compilation
 - language `.pot` compilation
+- adjust Tailwind config as per https://github.com/tailwindlabs/tailwindcss-typography/issues/60#issuecomment-721992816
 
 # Anything else?
 

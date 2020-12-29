@@ -8,9 +8,9 @@ A nimble WordPress starter theme that ain't half baaaaaaad.
 
 # Features
 
-- [Tailwind CSS](https://tailwindcss.com)
+- [Tailwindcss 2](https://tailwindcss.com)
 - [Alpine JS](https://github.com/alpinejs/alpine)
-- [Laravel Mix](https://laravel-mix.com)
+- [Laravel Mix 6 beta](https://laravel-mix.com)
 - jQuery removed by default
 
 ## WordPress customisations

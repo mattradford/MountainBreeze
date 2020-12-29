@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "A nimble WordPress starter theme that ain't half baaaaaaad. Includes Tailwind CSS, Alpine JS and Laravel Mix.",
   "main": "index.js",
+  "license": "Unlicense",
   "scripts": {
     "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "postinstall": "npm run dev"
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
   },
   "repository": {
     "type": "git",
@@ -30,20 +30,20 @@
   },
   "homepage": "https://github.com/mattradford/mountaingoat/tree/mountaingoat#readme",
   "dependencies": {
-    "@tailwindcss/typography": "^0.2.0",
-    "alpinejs": "^2.6.0",
-    "laravel-mix-versionhash": "^1.1.6",
-    "tailwindcss": "^1.8.12"
+    "@tailwindcss/typography": "^0.3.0",
+    "alpinejs": "^2.8.0",
+    "laravel-mix-versionhash": "^1.1.7"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@mattrad/tailwindcss-wordpress": "^0.1.2",
-    "cross-env": "^7.0.2",
-    "laravel-mix": "^5.0.6",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.5",
     "mix-tailwindcss": "^1.2.0",
+    "postcss": "^8.2.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
     "purgecss": "^2.3.0",
-    "vue-template-compiler": "^2.6.12"
+    "tailwindcss": "^2.0.2"
   }
 }

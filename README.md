@@ -103,10 +103,10 @@ There are two Tailwind plugins included:
 - [TailwindCSS WordPress](https://www.npmjs.com/package/@mattrad/tailwindcss-wordpress)
 
 ### Tailwind Typography
-A plugin that provides a set of `prose` classes to add typographic defaults. These have been added tp
+A plugin that provides a set of `prose` classes to add typographic defaults. These have been added to
 WordPress files such as `partials/content.php`.
 
-It works pretty well with block editor content, but some things (such as buttons) need work.
+It works pretty well with block editor content, but some things need work.
 
 ### TailwindCSS WordPress
 My plugin that generates WordPress utility classes - for block editor, accessibility, alignment and image captions.

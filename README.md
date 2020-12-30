@@ -179,11 +179,10 @@ means it's a lot easier to understand.
     - floated images
     - featured images
     - comments (maybe)
-- Editor colour palette and fonts sizes
+- Editor colour palette
 - PSR-12 conformity
 - Lint JavaScript and CSS
 - 404 page text option
-- fix `post-install-cmd` in `composer.json`
 - add version hashing to JS and CSS compilation
 - language `.pot` compilation
 - adjust Tailwind config as per https://github.com/tailwindlabs/tailwindcss-typography/issues/60#issuecomment-721992816

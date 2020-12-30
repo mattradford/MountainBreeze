@@ -1,6 +1,7 @@
 {
   "name": "mountaingoat",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "author": "Matt Radford",
   "description": "A nimble WordPress starter theme that ain't half baaaaaaad. Includes Tailwind CSS, Alpine JS and Laravel Mix.",
   "main": "index.js",
   "license": "Unlicense",
@@ -23,8 +24,6 @@
     "alpinejs",
     "theme"
   ],
-  "author": "Matt Radford",
-  "license": "GPL",
   "bugs": {
     "url": "https://github.com/mattradford/mountaingoat/issues"
   },
@@ -40,7 +39,7 @@
     "cross-env": "^7.0.3",
     "laravel-mix": "^6.0.5",
     "mix-tailwindcss": "^1.2.0",
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.2",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
     "purgecss": "^2.3.0",

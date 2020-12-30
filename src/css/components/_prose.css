@@ -73,6 +73,16 @@
         @apply outline-none ring;
     }
 }
+.wp-block-gallery {
+    background:black;
+}
+li.blocks-gallery-item {
+    @apply pl-0;
+    &::before {
+      @apply hidden;
+    }
+  }
+
 
 .post-password-form {
     input[type="password"] {

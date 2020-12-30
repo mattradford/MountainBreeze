@@ -4,12 +4,14 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {
-      typography: {
-        default: {
-          css: {
-            color: "#333",
-          },
+    future: {
+      // https://tailwindcss.com/docs/upcoming-changes
+      purgeLayersByDefault: true,
+    },
+    typography: {
+      default: {
+        css: {
+          color: "#333",
         },
       },
     },
@@ -18,9 +20,10 @@ module.exports = {
       secondary: "#ccc",
     },
     editorFontSizes: {
-      small: "0.875rem",
-      medium: "1rem",
+      small: "16px",
+      medium: "22px",
     },
+    extend: {},
   },
   variants: {},
   plugins: [

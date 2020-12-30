@@ -5,21 +5,27 @@ module.exports = {
       center: true,
     },
     extend: {
-      typography: {
-        default: {
+      typography: (theme) => ({
+        DEFAULT: {
           css: {
-            color: "#333",
+            color: theme('colors.gray.900'),
           },
         },
-      },
+      }),
     },
     editorColorPalette: {
       primary: "blue",
       secondary: "#ccc",
     },
+    // small  = .prose-sm
+    // medium = .prose-lg
+    // large  = .prose-2xl
+    // huge   = .prose h1
     editorFontSizes: {
       small: "0.875rem",
-      medium: "1rem",
+      medium: "1.125rem",
+      large: "1.5rem",
+      huge: "2.25rem",
     },
   },
   variants: {},

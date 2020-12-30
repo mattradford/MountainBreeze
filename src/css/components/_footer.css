@@ -1,6 +1,6 @@
 .copyright {
   @apply text-center;
   @screen md {
-      @apply flex justify-between text-left;
+    @apply flex justify-between text-left;
   }
 }

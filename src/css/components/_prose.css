@@ -1,9 +1,10 @@
 .prose {
-    /* Set li marker to the text colour */
-    ul > li::before {
-        background-color: currentColor;
-    }
-    video {
-        @apply mt-0 mb-0;
-    }
+  /* Set li marker to the text colour */
+  ul > li::before {
+    background-color: currentColor;
+  }
+
+  video {
+    @apply mt-0 mb-0;
+  }
 }

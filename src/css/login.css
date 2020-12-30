@@ -3,44 +3,49 @@
  */
 
 .login {
-    background: white;
+  background: white;
 
-    /* Hide the "Log in" link on the last password page, as it's pointless*/
-    input#wp-submit {
-        @apply bg-blue-500;
-        @apply border-blue-500;
-        &:hover,
-        &:focus {
-            @apply bg-blue-800;
-            @apply border-blue-800;
-        }
+  /* Hide the "Log in" link on the last password page, as it's pointless */
+  input#wp-submit {
+    @apply bg-blue-500;
+    @apply border-blue-500;
+
+    &:hover,
+    &:focus {
+      @apply bg-blue-800;
+      @apply border-blue-800;
     }
-    .message {
-        @apply border-blue-500;
-        box-shadow: none;
-    }
-    form {
-        box-shadow: none;
-        border: 0;
-    }
-    .button-primary {
-        text-shadow: none;
-    }
+  }
+
+  .message {
+    @apply border-blue-500;
+
+    box-shadow: none;
+  }
+
+  form {
+    box-shadow: none;
+    border: 0;
+  }
+
+  .button-primary {
+    text-shadow: none;
+  }
 }
 
 /* Center align the Lost Password link */
 #nav {
-    text-align: center;
+  text-align: center;
 }
 
 /* Hide the "Back to (website)" link */
 #backtoblog {
-    display: none;
+  display: none;
 }
 
 /* Match colours to modal shown when the login cookie expires */
 .wp-admin {
-    #wp-auth-check-wrap #wp-auth-check {
-        background-color: white;
-    }
+  #wp-auth-check-wrap #wp-auth-check {
+    background-color: white;
+  }
 }

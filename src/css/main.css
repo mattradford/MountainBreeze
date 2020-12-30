@@ -10,6 +10,7 @@
 @import "components/_forms.css";
 
 /* purgecss end ignore */
+
 /* Add utilities after composable classes
 @link https://tailwindcss.com/docs/extracting-components#extracting-css-components-with-apply */
 @tailwind utilities;

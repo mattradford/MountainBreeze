@@ -176,7 +176,6 @@ means it's a lot easier to understand.
 
 - fix
     - floated images
-    - featured images
     - comments (maybe)
 - Editor colour palette
 - PSR-12 conformity

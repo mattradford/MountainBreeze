@@ -6,12 +6,13 @@
   "main": "index.js",
   "license": "Unlicense",
   "scripts": {
-    "dev": "npm run development",
     "development": "mix",
+    "dev": "npm run development",
     "watch": "mix watch",
     "watch-poll": "mix watch -- --watch-options-poll=1000",
     "hot": "mix watch --hot",
-    "production": "mix --production"
+    "production": "mix --production",
+    "prod": "npm run production"
   },
   "repository": {
     "type": "git",

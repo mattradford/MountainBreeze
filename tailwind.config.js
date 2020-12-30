@@ -1,5 +1,6 @@
 module.exports = {
   // important: "html",
+  purge: false,
   theme: {
     container: {
       center: true,

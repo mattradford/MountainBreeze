@@ -4,13 +4,3 @@
         @apply px-0;
     }
 }
-
-article {
-    .wp-block-image.alignwide {
-        max-width: 80vw;
-        @apply mx-auto;
-    }
-}
-.prose {
-    max-width: none !important;
-}

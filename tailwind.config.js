@@ -9,6 +9,7 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.gray.900'),
+            maxWidth: 'none',
           },
         },
       }),

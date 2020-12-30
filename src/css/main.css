@@ -6,6 +6,8 @@
 @import "components/_pagination.css";
 @import "components/_article.css";
 @import "components/_prose.css";
+@import "components/_blocks.css";
+@import "components/_forms.css";
 
 /* purgecss end ignore */
 /* Add utilities after composable classes

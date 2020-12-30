@@ -179,7 +179,6 @@ means it's a lot easier to understand.
     - comments (maybe)
 - Editor colour palette
 - PSR-12 conformity
-- Lint JavaScript and CSS
 - 404 page text option
 - add version hashing to JS and CSS compilation
 - language `.pot` compilation

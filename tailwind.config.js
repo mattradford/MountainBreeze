@@ -42,6 +42,16 @@ module.exports = {
             maxWidth: theme("screens.sm"),
           },
         },
+        ".content > .alignwide": {
+          "@screen md": {
+            maxWidth: theme("screens.md"),
+            marginRight: "auto",
+            marginLeft: "auto",
+          },
+          "@screen lg": {
+            maxWidth: theme("screens.lg"),
+          },
+        },
         ".content > .wp-block-button": {
           "@apply mx-auto": {},
           "@screen sm": {

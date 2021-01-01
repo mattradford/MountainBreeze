@@ -3,9 +3,9 @@
  * Template part for global <header>
  *
  * @category Theme
- * @package  mattradford/mountaingoat
+ * @package  MountainGoat
  * @author   Matt Radford <matt@mattrad.uk>
- * @license  http://www.wtfpl.net/about/
+ * @license  http://www.wtfpl.net/about/ WTFPL
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
  **/
@@ -18,7 +18,7 @@
                 <?php
                 if (has_custom_logo()) :
                     $customLogoId = get_theme_mod('custom_logo');
-                    $imageMarkup = wp_get_attachment_image($customLogoId , 'full');
+                    $imageMarkup = wp_get_attachment_image($customLogoId, 'full');
                     echo $imageMarkup;
                 else :
                     echo '<span>'. get_bloginfo('name') . '</span>';

@@ -3,14 +3,14 @@
  * Numeric page navigation, adapted from Bones.
  *
  * @category Theme
- * @package  mattradford/mountaingoat
+ * @package  MountainGoat
  * @author   Matt Radford <matt@mattrad.uk>
- * @license  http://www.wtfpl.net/about/
+ * @license  http://www.wtfpl.net/about/ WTFPL
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
- * @return void
+ * @return   void
  */
-function mg_pagination()
+function mgPagination()
 {
     global $wp_query;
     $bignum = 999999999;

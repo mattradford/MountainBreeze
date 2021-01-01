@@ -1,11 +1,12 @@
 <?php
 /**
  * Index template
+ * php version 7.0.0
  *
  * @category Theme
- * @package  mattradford/mountaingoat
+ * @package  MountainGoat
  * @author   Matt Radford <matt@mattrad.uk>
- * @license  http://www.wtfpl.net/about/
+ * @license  http://www.wtfpl.net/about/ WTFPL
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
  **/
@@ -19,5 +20,5 @@ while (have_posts()) :
 endwhile;
 
 if ($wp_query->max_num_pages > 1) {
-    mg_pagination();
+    mgPagination();
 }

@@ -6,9 +6,9 @@ namespace App\Theme;
  * Theme wrapper
  *
  * @category Theme
- * @package  mattradford/mountaingoat
+ * @package  MountainGoat
  * @author   Matt Radford <matt@mattrad.uk>
- * @license  http://www.wtfpl.net/about/
+ * @license  http://www.wtfpl.net/about/ WTFPL
  * @link     https://github.com/mattradford/mountaingoat
  * @link     http://roots.io/an-introduction-to-the-roots-theme-wrapper/
  * @link     http://scribu.net/wordpress/theme-wrappers.html

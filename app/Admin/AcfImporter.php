@@ -10,9 +10,9 @@ namespace App\Admin;
  * that can be edited in the ACF UI.
  *
  * @category Theme
- * @package  mattradford/mountaingoat
+ * @package  MountainGoat
  * @author   Matt Radford <matt@mattrad.uk>
- * @license  http://www.wtfpl.net/about/
+ * @license  http://www.wtfpl.net/about/ WTFPL
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
  */
@@ -56,7 +56,7 @@ class AcfImporter
                 "Field Group Importer",
                 'manage_options',
                 $this->pageName,
-                array($this, 'create_admin_page')
+                array($this, 'createAdminPage')
             );
         }
     }
@@ -93,7 +93,7 @@ class AcfImporter
      *
      * @return void
      */
-    public function create_admin_page()
+    public function createAdminPage()
     {
         $notice = "";
         $key = $_POST['group_key'];

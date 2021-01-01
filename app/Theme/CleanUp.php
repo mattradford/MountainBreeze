@@ -6,9 +6,9 @@ namespace App\Theme;
  * Remove bloat from front end
  *
  * @category Theme
- * @package  mattradford/mountaingoat
+ * @package  MountainGoat
  * @author   Matt Radford <matt@mattrad.uk>
- * @license  http://www.wtfpl.net/about/
+ * @license  http://www.wtfpl.net/about/ WTFPL
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
  */
@@ -38,15 +38,19 @@ class CleanUp
 
     /**
      * Text and link after the_excerpt()
+     *
+     * @return string
      **/
-    public function excerptReadMore() {
+    public function excerptReadMore()
+    {
         return ' &hellip;&nbsp;<a href="' . get_permalink() . '">' . __('Continued', '@textdomain') . '</a>';
     }
 
     /**
      * Limit the_excerpt() length, in words
      **/
-    public function excerptLength() {
+    public function excerptLength()
+    {
         return 10;
     }
 }

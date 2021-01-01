@@ -178,7 +178,6 @@ means it's a lot easier to understand.
     - floated images
     - comments (maybe)
 - Editor colour palette
-- PSR-12 conformity
 - 404 page text option
 - add version hashing to JS and CSS compilation
 - language `.pot` compilation

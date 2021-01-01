@@ -6,9 +6,9 @@ namespace App\Theme;
  * Enqueue scripts, styles and fonts.
  *
  * @category Theme
- * @package  mattradford/mountaingoat
+ * @package  MountainGoat
  * @author   Matt Radford <matt@mattrad.uk>
- * @license  http://www.wtfpl.net/about/
+ * @license  http://www.wtfpl.net/about/ WTFPL
  * @link     https://github.com/mattradford/mountaingoat
  * @since    1.0.0
  */
@@ -71,10 +71,10 @@ class Enqueue
     }
 
      /**
-     * CSS for wp-login
-     *
-     * @return void
-     */
+      * CSS for wp-login
+      *
+      * @return void
+      */
     public function login()
     {
         wp_enqueue_style('mg-login', get_stylesheet_directory_uri() . mgAssetPath('/css/login.css'), ['login']);

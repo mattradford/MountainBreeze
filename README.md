@@ -51,8 +51,10 @@ have a solid foundation on which to create their pages. This is a work-in-progre
 Thanks goes to the many creators and contributors behind Laravel, Tailwind CSS, Alpine JS, the many WordPress themes
 I've lifted code from - and all of their components for providing such an outstanding experience for web developers.
 
-Some of the concepts and code are taken from the [10 Degrees base theme](https://github.com/10degrees/10degrees-base). Props to [@10dkarl](https://github.com/10dkarl), [@baber10degrees](https://github.com/baber10degrees),
-[@BenRutlandWeb](BenRutlandWeb), [@ralph10d](https://github.com/ralph10D), [@jonnyvaughan](https://github.com/jonnyvaughan) and [@AliceKLWilliams](https://github.com/AliceKLWilliams).
+Some of the concepts and code are taken from the [10 Degrees base theme](https://github.com/10degrees/10degrees-base).
+Props to [@10dkarl](https://github.com/10dkarl), [@baber10degrees](https://github.com/baber10degrees),
+[@BenRutlandWeb](BenRutlandWeb), [@ralph10d](https://github.com/ralph10D), [@jonnyvaughan](https://github.com/jonnyvaughan)
+and [@AliceKLWilliams](https://github.com/AliceKLWilliams).
 
 And not least [Luke Downing](https://github.com/lukeraymonddowning) from whom I initially forked [Mountain Breeze](https://github.com/lukeraymonddowning/MountainBreeze).
 
@@ -178,13 +180,16 @@ means it's a lot easier to understand.
 
 # To do
 
-- fix
-    - floated images
-    - comments (maybe)
-- Editor colour palette
+- Fix floated images
+- Add version hashing to JS and CSS compilation
+- Language `.pot` compilation
 - 404 page text option
-- add version hashing to JS and CSS compilation
-- language `.pot` compilation
+- Editor colour palette
+
+# Won't fix
+
+- Comments
+  - Meh
 
 # Anything else?
 

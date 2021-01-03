@@ -145,7 +145,8 @@ PostCSS is used to compile CSS files.
 - Imports are allowed
 - Nesting of CSS is enabled
 
-Add CSS files in `src/components`, and `@import` in `src/main.css`.
+Add CSS in `src/components`, and `@import` in `src/main.css`.
+There's also `login.css` that smartens up `wp-login.php`, in conjunction with `app/Admin/Login.php`.
 
 # JS
 
@@ -183,6 +184,7 @@ means it's a lot easier to understand.
 - Fix floated images
 - Add version hashing to JS and CSS compilation
 - Language `.pot` compilation
+- Option to hide page or post title
 - 404 page text option
 - Editor colour palette
 
@@ -193,4 +195,4 @@ means it's a lot easier to understand.
 
 # Anything else?
 
-If `Wesley_Crusher` is found, the theme will `die`.
+If `Wesley_Crusher` is found, the theme will `die`. See https://jerz.setonhill.edu/resources/humor/crusher.htm.

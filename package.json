@@ -1,6 +1,6 @@
 {
   "name": "mountaingoat",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "author": "Matt Radford",
   "description": "A nimble WordPress starter theme that ain't half baaaaaaad. Includes Tailwind CSS, Alpine JS and Laravel Mix.",
   "main": "index.js",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
-    "@mattrad/tailwindcss-wordpress": "^0.1.2",
+    "@mattrad/tailwindcss-wordpress": "^1.1.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.16.0",
     "eslint-config-standard": "^16.0.2",
@@ -45,7 +45,7 @@
     "eslint-plugin-jquery": "^1.5.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "laravel-mix": "^6.0.5",
+    "laravel-mix": "^6.0.0",
     "mix-tailwindcss": "^1.2.0",
     "postcss": "^8.2.2",
     "postcss-import": "^12.0.1",
@@ -53,6 +53,7 @@
     "purgecss": "^2.3.0",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "webpack-cli": "^4.2.0"
   }
 }

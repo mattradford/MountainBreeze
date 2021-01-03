@@ -61,7 +61,7 @@ class Login
                 background-image: url(<?php echo $customLogoUrl; ?>);
                 padding-bottom: 30px;
                 width: 250px;
-                background-size: cover;
+                background-size: contain;
             }
             </style>
             <?php

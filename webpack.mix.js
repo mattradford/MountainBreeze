@@ -1,38 +1,37 @@
-const mix = require("laravel-mix");
-const purgecss = require("@fullhuman/postcss-purgecss");
-require("mix-tailwindcss");
+const mix = require('laravel-mix')
+const purgecss = require('@fullhuman/postcss-purgecss')
+require('mix-tailwindcss')
 
 mix
-  .setPublicPath("dist")
-  .js("src/js/main.js", "js")
-  .postCss("src/css/main.css", "css", [
-    require("tailwindcss"),
-    require("postcss-nested"),
-    ...(process.env.NODE_ENV === "production"
+  .setPublicPath('dist')
+  .js('src/js/main.js', 'js')
+  .postCss('src/css/main.css', 'css', [
+    require('tailwindcss'),
+    require('postcss-nested'),
+    ...(process.env.NODE_ENV === 'production'
       ? [
           purgecss({
-            content: ["**/*.php", "**/*.html"],
+            content: ['**/*.php', '**/*.html'],
             defaultExtractor: (content) =>
-              content.match(/[\w-/:]+(?<!:)/g) || [],
-          }),
+              content.match(/[\w-/:]+(?<!:)/g) || []
+          })
         ]
-      : []),
+      : [])
   ])
-  .postCss("src/css/login.css", "css", [
-    require("tailwindcss"),
-    require("postcss-nested"),
-    ...(process.env.NODE_ENV === "production"
+  .postCss('src/css/login.css', 'css', [
+    require('tailwindcss'),
+    require('postcss-nested'),
+    ...(process.env.NODE_ENV === 'production'
       ? [
           purgecss({
-            content: ["**/*.php", "**/*.html"],
+            content: ['**/*.php', '**/*.html'],
             defaultExtractor: (content) =>
-              content.match(/[\w-/:]+(?<!:)/g) || [],
-          }),
+              content.match(/[\w-/:]+(?<!:)/g) || []
+          })
         ]
-      : []),
+      : [])
   ])
-  .tailwind();
-
-// Unless you put the full destination filepath, .babel breaks compliation
-// ¯\_(ツ)_/¯
-mix.babel("src/js/legacy.js", "dist/js/legacy.js");
+  .tailwind()
+  // Unless you put the full destination filepath, .babel breaks compliation
+  // ¯\_(ツ)_/¯
+  .babel('src/js/legacy.js', 'dist/js/legacy.js')

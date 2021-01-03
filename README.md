@@ -164,7 +164,7 @@ No and yes. jQuery is a large library that you may not need. Libraries like Alpi
 nicer syntax at a much lower cost, so I have removed jQuery by default in the theme. Some WordPress plugins rely
 on jQuery. Some of the better ones will check if it's enqueued and if not, enqueue their own jQuery.
 
-If you need it, you can get enable jQuery by returning `true` on the `enablejQuery()` function
+If you need it, you can enable jQuery by returning `true` on the `enablejQuery()` function
 in `functions.php`, e.g.:
 
 ```php
@@ -176,8 +176,8 @@ function enablejQuery()
 
 This will also enqueue an additional file, `legacy.js`. Write all your jQuery in `src/js/legacy.js` and it will
 be compiled by Laravel Mix, separately to your modern JavaScript in `src/js/main.js`. This is because while I've found
-it possible to include jQuery within a Webpack file, it's a real pain to do so. This separation of modern and legacy JS
-means it's a lot easier to understand.
+it possible to include jQuery within a Webpack file, it's a real pain to do so and still access a `$` object.
+This separation of modern and legacy JS means it's a lot easier to manage.
 
 # To do
 

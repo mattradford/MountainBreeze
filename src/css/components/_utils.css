@@ -3,4 +3,11 @@
   @screen md {
     @apply px-0;
   }
+
+  &::after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+    clear: both;
+  }
 }

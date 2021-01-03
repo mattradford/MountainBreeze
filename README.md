@@ -181,7 +181,6 @@ means it's a lot easier to understand.
 
 # To do
 
-- Fix floated images
 - Add version hashing to JS and CSS compilation
 - Language `.pot` compilation
 - Option to hide page or post title
@@ -191,6 +190,7 @@ means it's a lot easier to understand.
 # Won't fix
 
 - Comments
+- Widget support
   - Meh
 
 # Anything else?

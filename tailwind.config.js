@@ -10,10 +10,10 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.gray.900'),
-            maxWidth: 'none',
-          },
-        },
-      }),
+            maxWidth: 'none'
+          }
+        }
+      })
     },
     editorColorPalette: {
       primary: "blue",
@@ -28,7 +28,7 @@ module.exports = {
       medium: "1.125rem",
       large: "1.5rem",
       huge: "2.25rem",
-    },
+    }
   },
   variants: {},
   plugins: [
@@ -36,7 +36,7 @@ module.exports = {
     require("@mattrad/tailwindcss-wordpress"),
     ({ addComponents, theme }) => {
       addComponents({
-        ".content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce)": {
+        ".content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter):not(.wp-block-separator):not(.woocommerce)": {
           "@apply mx-auto": {},
           "@screen sm": {
             maxWidth: theme("screens.sm"),

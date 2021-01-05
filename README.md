@@ -86,6 +86,8 @@ To watch your files in `src` and build for development when they're saved, run `
 When you're ready for production, run `$ npm run prod`. This will minify and prepare your files ready
 for production.
 
+Compiled assets are loading with a cache-busting version hash appended.
+
 ## Using Mix
 
 Laravel Mix is a Webpack wrapper that take the complexity out of Webpack. The Mix configuration
@@ -181,7 +183,6 @@ This separation of modern and legacy JS means it's a lot easier to manage.
 
 # To do
 
-- Add version hashing to JS and CSS compilation
 - Option to hide page or post title
 - 404 page text option
 - Editor colour palette

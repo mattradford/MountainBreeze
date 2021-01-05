@@ -182,7 +182,6 @@ This separation of modern and legacy JS means it's a lot easier to manage.
 # To do
 
 - Add version hashing to JS and CSS compilation
-- Language `.pot` compilation
 - Option to hide page or post title
 - 404 page text option
 - Editor colour palette

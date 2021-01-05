@@ -51,9 +51,9 @@ class Enqueue
     public function scripts()
     {
         wp_enqueue_script('mg-main', get_stylesheet_directory_uri() . mgAssetPath('/js/main.js'), '', '', true);
-        if (is_single() && comments_open() && get_option('thread_comments')) {
-            wp_enqueue_script('comment-reply');
-        }
+        // if (is_single() && comments_open() && get_option('thread_comments')) {
+        //     wp_enqueue_script('comment-reply');
+        // }
     }
 
     /**

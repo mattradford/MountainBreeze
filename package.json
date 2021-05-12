@@ -48,7 +48,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "laravel-mix": "^6.0.0",
     "mix-tailwindcss": "^1.2.0",
-    "postcss": "^8.2.2",
+    "postcss": "^8.2.10",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
     "purgecss": "^2.3.0",
